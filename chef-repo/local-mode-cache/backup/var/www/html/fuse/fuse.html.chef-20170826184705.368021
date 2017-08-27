@@ -1,0 +1,17 @@
+<html>
+        <head>
+                <title>Welcome to ip-172-31-52-44</title>
+        </head>
+        <body>
+                Fuse Assignment by Manoj
+                <ul>
+                        <li><b>HostName or FQDN</b>: ip-172-31-52-44.ec2.internal</li>              
+                        <li><b>IP Address</b>: 172.31.52.44</li>
+                        <li><b>Platform</b>: ubuntu</li>
+                        <li><b>Plaform Version</b>: 14.04</li>
+                        <li><b>Run List</b>: recipe[apache]</li>
+                        <li><b>Log Download Link</b>: <A HREF = "https://s3.amazonaws.com/fuse-manoj/logs/log.txt/">Log file location in S3</A></li>
+                </ul>
+
+        </body>
+</html>

@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/ubuntu/chef-repo/cookbooks/apache/recipes'
+let g:netrw_dirhist_2='/home/ubuntu/chef-repo/cookbooks/apache/files'
+let g:netrw_dirhist_3='/home/ubuntu/chef-repo/cookbooks/apache'
+let g:netrw_dirhist_4='/home/ubuntu/chef-repo/cookbooks/apache/templates/default'
+let g:netrw_dirhist_5='/home/ubuntu/chef-repo/cookbooks/apache/templates'

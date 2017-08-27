@@ -1,0 +1,414 @@
+Starting Chef Client, version 13.3.42[0m
+resolving cookbooks for run list: ["apache"][0m
+Synchronizing Cookbooks:[0m
+  - apache (0.1.0)[0m
+Installing Cookbook Gems:[0m
+Compiling Cookbooks...[0m
+Converging 8 resources[0m
+Recipe: apache::default[0m
+  * apt_package[apache2] action install (up to date)
+  * service[apache2] action start (up to date)
+  * service[apache2] action enable (up to date)
+  * directory[/var/www/html/fuse] action create (up to date)
+  * cookbook_file[/etc/apache2/sites-available/000-default.conf] action create (up to date)
+  * cookbook_file[/etc/apache2/sites-available/fuse.conf] action create (up to date)
+  * template[/var/www/html/fuse.html] action create (up to date)
+  * execute[a2en] action run
+    [32m- execute sudo a2ensite fuse[0m
+[0m  * template[/var/www/html/fuse/fuse.html] action create (up to date)
+  * service[apache2] action restart
+    [32m- restart service service[apache2][0m
+[0m[0m
+Running handlers:[0m
+Running handlers complete
+[0mChef Client finished, 2/10 resources updated in 04 seconds[0m
+[2017-08-26T16:50:29+00:00] WARN: *****************************************
+[2017-08-26T16:50:29+00:00] WARN: Did not find config file: /solo.rb, using command line options.
+[2017-08-26T16:50:29+00:00] WARN: *****************************************
+[2017-08-26T16:50:29+00:00] FATAL: Cannot load configuration from fuse.json
+Starting Chef Client, version 13.3.42[0m
+resolving cookbooks for run list: ["apache"][0m
+Synchronizing Cookbooks:[0m
+  - apache (0.1.0)[0m
+Installing Cookbook Gems:[0m
+Compiling Cookbooks...[0m
+Converging 8 resources[0m
+Recipe: apache::default[0m
+  * apt_package[apache2] action install (up to date)
+  * service[apache2] action start (up to date)
+  * service[apache2] action enable (up to date)
+  * directory[/var/www/html/fuse] action create (up to date)
+  * cookbook_file[/etc/apache2/sites-available/000-default.conf] action create (up to date)
+  * cookbook_file[/etc/apache2/sites-available/fuse.conf] action create (up to date)
+  * template[/var/www/html/fuse.html] action create (up to date)
+  * execute[a2en] action run
+    [32m- execute sudo a2ensite fuse[0m
+[0m  * template[/var/www/html/fuse/fuse.html] action create (up to date)
+  * service[apache2] action restart
+    [32m- restart service service[apache2][0m
+[0m[0m
+Running handlers:[0m
+Running handlers complete
+[0mChef Client finished, 2/10 resources updated in 04 seconds[0m
+[2017-08-26T17:51:49+00:00] WARN: *****************************************
+[2017-08-26T17:51:49+00:00] WARN: Did not find config file: /solo.rb, using command line options.
+[2017-08-26T17:51:49+00:00] WARN: *****************************************
+[2017-08-26T17:51:49+00:00] FATAL: Cannot load configuration from fuse.json
+Starting Chef Client, version 13.3.42[0m
+resolving cookbooks for run list: ["apache"][0m
+Synchronizing Cookbooks:[0m
+  [0m
+  ================================================================================[0m
+  [31mError Syncing Cookbooks:[0m
+  ================================================================================[0m
+  
+[0m  Unexpected Error:[0m
+  -----------------[0m
+  Errno::EACCES: Permission denied @ rb_sysopen - /home/ubuntu/chef-solo/cookbooks/apache/recipes/default.rb[0m
+  
+[0m  System Info:[0m
+  ------------[0m
+  chef_version=13.3.42
+[0m  platform=ubuntu
+[0m  platform_version=14.04
+[0m  ruby=ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+[0m  program_name=chef-solo worker: ppid=14314;start=18:12:01;
+[0m  executable=/opt/chef/bin/chef-solo[0m
+  
+[0m  [0m
+  Running handlers:[0m
+[2017-08-26T18:12:02+00:00] ERROR: Running exception handlers
+  Running handlers complete
+[0m[2017-08-26T18:12:02+00:00] ERROR: Exception handlers complete
+  Chef Client failed. 0 resources updated in 01 seconds[0m
+[2017-08-26T18:12:02+00:00] FATAL: Stacktrace dumped to /home/ubuntu/chef-solo/chef-stacktrace.out
+[2017-08-26T18:12:02+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2017-08-26T18:12:02+00:00] ERROR: Permission denied @ rb_sysopen - /home/ubuntu/chef-solo/cookbooks/apache/recipes/default.rb
+[2017-08-26T18:12:02+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+Starting Chef Client, version 13.3.42[0m
+resolving cookbooks for run list: ["apache"][0m
+Synchronizing Cookbooks:[0m
+  [0m
+  ================================================================================[0m
+  [31mError Syncing Cookbooks:[0m
+  ================================================================================[0m
+  
+[0m  Unexpected Error:[0m
+  -----------------[0m
+  Errno::EACCES: Permission denied @ rb_sysopen - /home/ubuntu/chef-solo/cookbooks/apache/recipes/default.rb[0m
+  
+[0m  System Info:[0m
+  ------------[0m
+  chef_version=13.3.42
+[0m  platform=ubuntu
+[0m  platform_version=14.04
+[0m  ruby=ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+[0m  program_name=chef-solo worker: ppid=14602;start=18:13:19;
+[0m  executable=/opt/chef/bin/chef-solo[0m
+  
+[0m  [0m
+  Running handlers:[0m
+[2017-08-26T18:13:20+00:00] ERROR: Running exception handlers
+  Running handlers complete
+[0m[2017-08-26T18:13:20+00:00] ERROR: Exception handlers complete
+  Chef Client failed. 0 resources updated in 01 seconds[0m
+[2017-08-26T18:13:20+00:00] FATAL: Stacktrace dumped to /home/ubuntu/chef-solo/chef-stacktrace.out
+[2017-08-26T18:13:20+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2017-08-26T18:13:20+00:00] ERROR: Permission denied @ rb_sysopen - /home/ubuntu/chef-solo/cookbooks/apache/recipes/default.rb
+[2017-08-26T18:13:20+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+Starting Chef Client, version 13.3.42[0m
+resolving cookbooks for run list: ["apache"][0m
+Synchronizing Cookbooks:[0m
+  - apache (0.1.0)[0m
+Installing Cookbook Gems:[0m
+Compiling Cookbooks...[0m
+Converging 8 resources[0m
+Recipe: apache::default[0m
+  * apt_package[apache2] action install (up to date)
+  * service[apache2] action start (up to date)
+  * service[apache2] action enable (up to date)
+  * directory[/var/www/html/fuse] action create (up to date)
+  * cookbook_file[/etc/apache2/sites-available/000-default.conf] action create (up to date)
+  * cookbook_file[/etc/apache2/sites-available/fuse.conf] action create (up to date)
+  * template[/var/www/html/fuse.html] action create (up to date)
+  * execute[a2en] action run
+    [32m- execute sudo a2ensite fuse[0m
+[0m  * template[/var/www/html/fuse/fuse.html] action create (up to date)
+  * service[apache2] action restart
+    [32m- restart service service[apache2][0m
+[0m[0m
+Running handlers:[0m
+Running handlers complete
+[0mChef Client finished, 2/10 resources updated in 04 seconds[0m
+[2017-08-26T18:14:22+00:00] WARN: *****************************************
+[2017-08-26T18:14:22+00:00] WARN: Did not find config file: /solo.rb, using command line options.
+[2017-08-26T18:14:22+00:00] WARN: *****************************************
+[2017-08-26T18:14:22+00:00] FATAL: Cannot load configuration from fuse.json
+Starting Chef Client, version 13.3.42[0m
+resolving cookbooks for run list: ["apache"][0m
+Synchronizing Cookbooks:[0m
+  - apache (0.1.0)[0m
+Installing Cookbook Gems:[0m
+Compiling Cookbooks...[0m
+Converging 8 resources[0m
+Recipe: apache::default[0m
+  * apt_package[apache2] action install (up to date)
+  * service[apache2] action start (up to date)
+  * service[apache2] action enable (up to date)
+  * directory[/var/www/html/fuse] action create (up to date)
+  * cookbook_file[/etc/apache2/sites-available/000-default.conf] action create (up to date)
+  * cookbook_file[/etc/apache2/sites-available/fuse.conf] action create (up to date)
+  * template[/var/www/html/fuse.html] action create (up to date)
+  * execute[a2en] action run
+    [32m- execute sudo a2ensite fuse[0m
+[0m  * template[/var/www/html/fuse/fuse.html] action create (up to date)
+  * service[apache2] action restart[2017-08-26T18:15:25+00:00] FATAL: SIGINT received, stopping
+[2017-08-26T18:15:25+00:00] FATAL: SIGINT received, stopping
+
+  [0m
+  Running handlers:[0m
+[2017-08-26T18:15:28+00:00] ERROR: Running exception handlers
+  Running handlers complete
+[0m[2017-08-26T18:15:28+00:00] ERROR: Exception handlers complete
+  Chef Client failed. 1 resources updated in 06 seconds[0m
+[2017-08-26T18:15:28+00:00] FATAL: Stacktrace dumped to /home/ubuntu/chef-solo/chef-stacktrace.out
+[2017-08-26T18:15:28+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2017-08-26T18:15:28+00:00] ERROR: exit
+Starting Chef Client, version 13.3.42[0m
+resolving cookbooks for run list: ["apache"][0m
+Synchronizing Cookbooks:[0m
+  - apache (0.1.0)[0m
+Installing Cookbook Gems:[0m
+Compiling Cookbooks...[0m
+Converging 8 resources[0m
+Recipe: apache::default[0m
+  * apt_package[apache2] action install (up to date)
+  * service[apache2] action start (up to date)
+  * service[apache2] action enable (up to date)
+  * directory[/var/www/html/fuse] action create (up to date)
+  * cookbook_file[/etc/apache2/sites-available/000-default.conf] action create (up to date)
+  * cookbook_file[/etc/apache2/sites-available/fuse.conf] action create (up to date)
+  * template[/var/www/html/fuse.html] action create
+    [32m- update content in file /var/www/html/fuse.html from 75d554 to 3336c3[0m
+    [37m--- /var/www/html/fuse.html	2017-08-26 16:20:53.966111000 +0000[0m
+    [37m+++ /var/www/html/.chef-fuse20170826-16199-180x9kq.html	2017-08-26 18:26:29.362111000 +0000[0m
+    [37m@@ -4,13 +4,18 @@[0m
+    [37m         </head>[0m
+    [37m         <body>[0m
+    [37m                 Fuse Assignment by Manoj[0m
+    [37m-                <ul>[0m
+    [37m+                <hl>[0m
+    [37m                         <li><b>HostName or FQDN</b>: ip-172-31-52-44.ec2.internal</li>              [0m
+    [37m                         <li><b>IP Address</b>: 172.31.52.44</li>[0m
+    [37m                         <li><b>Platform</b>: ubuntu</li>[0m
+    [37m                         <li><b>Plaform Version</b>: 14.04</li>[0m
+    [37m                         <li><b>Run List</b>: recipe[apache]</li>[0m
+    [37m-                </ul>[0m
+    [37m+                       [0m
+    [37m+                </hl>[0m
+    [37m+[0m
+    [37m+                <h2>[0m
+    [37m+                      <li><b>Log Download Location-https://s3.amazonaws.com/fuse-manoj/logs/log.txt</li>[0m
+    [37m+                </h2>[0m
+    [37m         </body>[0m
+    [37m </html>[0m
+[0m  * execute[a2en] action run
+    [32m- execute sudo a2ensite fuse[0m
+[0m  * template[/var/www/html/fuse/fuse.html] action create
+    [32m- update content in file /var/www/html/fuse/fuse.html from 75d554 to 3336c3[0m
+    [37m--- /var/www/html/fuse/fuse.html	2017-08-26 16:13:56.810111000 +0000[0m
+    [37m+++ /var/www/html/fuse/.chef-fuse20170826-16199-6kf9ep.html	2017-08-26 18:26:29.418111000 +0000[0m
+    [37m@@ -4,13 +4,18 @@[0m
+    [37m         </head>[0m
+    [37m         <body>[0m
+    [37m                 Fuse Assignment by Manoj[0m
+    [37m-                <ul>[0m
+    [37m+                <hl>[0m
+    [37m                         <li><b>HostName or FQDN</b>: ip-172-31-52-44.ec2.internal</li>              [0m
+    [37m                         <li><b>IP Address</b>: 172.31.52.44</li>[0m
+    [37m                         <li><b>Platform</b>: ubuntu</li>[0m
+    [37m                         <li><b>Plaform Version</b>: 14.04</li>[0m
+    [37m                         <li><b>Run List</b>: recipe[apache]</li>[0m
+    [37m-                </ul>[0m
+    [37m+                       [0m
+    [37m+                </hl>[0m
+    [37m+[0m
+    [37m+                <h2>[0m
+    [37m+                      <li><b>Log Download Location-https://s3.amazonaws.com/fuse-manoj/logs/log.txt</li>[0m
+    [37m+                </h2>[0m
+    [37m         </body>[0m
+    [37m </html>[0m
+[0m  * service[apache2] action restart
+    [32m- restart service service[apache2][0m
+[0m[0m
+Running handlers:[0m
+Running handlers complete
+[0mChef Client finished, 4/10 resources updated in 04 seconds[0m
+[2017-08-26T18:26:32+00:00] WARN: *****************************************
+[2017-08-26T18:26:32+00:00] WARN: Did not find config file: /solo.rb, using command line options.
+[2017-08-26T18:26:32+00:00] WARN: *****************************************
+[2017-08-26T18:26:32+00:00] FATAL: Cannot load configuration from fuse.json
+Starting Chef Client, version 13.3.42[0m
+resolving cookbooks for run list: ["apache"][0m
+Synchronizing Cookbooks:[0m
+  - apache (0.1.0)[0m
+Installing Cookbook Gems:[0m
+Compiling Cookbooks...[0m
+Converging 8 resources[0m
+Recipe: apache::default[0m
+  * apt_package[apache2] action install (up to date)
+  * service[apache2] action start (up to date)
+  * service[apache2] action enable (up to date)
+  * directory[/var/www/html/fuse] action create (up to date)
+  * cookbook_file[/etc/apache2/sites-available/000-default.conf] action create (up to date)
+  * cookbook_file[/etc/apache2/sites-available/fuse.conf] action create (up to date)
+  * template[/var/www/html/fuse.html] action create
+    [32m- update content in file /var/www/html/fuse.html from 4daca4 to e1c848[0m
+    [37m--- /var/www/html/fuse.html	2017-08-26 18:31:55.446111000 +0000[0m
+    [37m+++ /var/www/html/.chef-fuse20170826-17498-1kv484o.html	2017-08-26 18:39:45.646111000 +0000[0m
+    [37m@@ -10,12 +10,9 @@[0m
+    [37m                         <li><b>Platform</b>: ubuntu</li>[0m
+    [37m                         <li><b>Plaform Version</b>: 14.04</li>[0m
+    [37m                         <li><b>Run List</b>: recipe[apache]</li>[0m
+    [37m-                       [0m
+    [37m+                        <li><b>Log Download Link</b>: <A HREF = "https://s3.amazonaws.com/fuse-manoj/logs/log.txt/">Log file location in S3</A></li>[0m
+    [37m                 </ul>[0m
+    [37m [0m
+    [37m-                <u2>[0m
+    [37m-                      <li><b>Log Download Location-https://s3.amazonaws.com/fuse-manoj/logs/log.txt</li>[0m
+    [37m-                </u2>[0m
+    [37m         </body>[0m
+    [37m </html>[0m
+[0m  * execute[a2en] action run
+    [32m- execute sudo a2ensite fuse[0m
+[0m  * template[/var/www/html/fuse/fuse.html] action create
+    [32m- update content in file /var/www/html/fuse/fuse.html from 4daca4 to e1c848[0m
+    [37m--- /var/www/html/fuse/fuse.html	2017-08-26 18:31:55.506111000 +0000[0m
+    [37m+++ /var/www/html/fuse/.chef-fuse20170826-17498-1rt3n6z.html	2017-08-26 18:39:45.706111000 +0000[0m
+    [37m@@ -10,12 +10,9 @@[0m
+    [37m                         <li><b>Platform</b>: ubuntu</li>[0m
+    [37m                         <li><b>Plaform Version</b>: 14.04</li>[0m
+    [37m                         <li><b>Run List</b>: recipe[apache]</li>[0m
+    [37m-                       [0m
+    [37m+                        <li><b>Log Download Link</b>: <A HREF = "https://s3.amazonaws.com/fuse-manoj/logs/log.txt/">Log file location in S3</A></li>[0m
+    [37m                 </ul>[0m
+    [37m [0m
+    [37m-                <u2>[0m
+    [37m-                      <li><b>Log Download Location-https://s3.amazonaws.com/fuse-manoj/logs/log.txt</li>[0m
+    [37m-                </u2>[0m
+    [37m         </body>[0m
+    [37m </html>[0m
+[0m  * service[apache2] action restart
+    [32m- restart service service[apache2][0m
+[0m[0m
+Running handlers:[0m
+Running handlers complete
+[0mChef Client finished, 4/10 resources updated in 04 seconds[0m
+[2017-08-26T18:39:48+00:00] WARN: *****************************************
+[2017-08-26T18:39:48+00:00] WARN: Did not find config file: /solo.rb, using command line options.
+[2017-08-26T18:39:48+00:00] WARN: *****************************************
+[2017-08-26T18:39:48+00:00] FATAL: Cannot load configuration from fuse.json
+Starting Chef Client, version 13.3.42[0m
+resolving cookbooks for run list: ["apache"][0m
+Synchronizing Cookbooks:[0m
+  - apache (0.1.0)[0m
+Installing Cookbook Gems:[0m
+Compiling Cookbooks...[0m
+Converging 8 resources[0m
+Recipe: apache::default[0m
+  * apt_package[apache2] action install (up to date)
+  * service[apache2] action start (up to date)
+  * service[apache2] action enable (up to date)
+  * directory[/var/www/html/fuse] action create (up to date)
+  * cookbook_file[/etc/apache2/sites-available/000-default.conf] action create (up to date)
+  * cookbook_file[/etc/apache2/sites-available/fuse.conf] action create (up to date)
+  * template[/var/www/html/fuse.html] action create
+    [32m- update content in file /var/www/html/fuse.html from f55bb7 to 63eb56[0m
+    [37m--- /var/www/html/fuse.html	2017-08-26 18:47:05.302111000 +0000[0m
+    [37m+++ /var/www/html/.chef-fuse20170826-29197-1yc2dzt.html	2017-08-26 23:34:35.610111000 +0000[0m
+    [37m@@ -10,7 +10,7 @@[0m
+    [37m                         <li><b>Platform</b>: ubuntu</li>[0m
+    [37m                         <li><b>Plaform Version</b>: 14.04</li>[0m
+    [37m                         <li><b>Run List</b>: recipe[apache]</li>[0m
+    [37m-                        <li><b>Log Download Link</b>: <A HREF = "https://s3.amazonaws.com/fuse-manoj/logs/log.txt/">https://s3.amazonaws.com/fuse-manoj/logs/log.txt</A></li>[0m
+    [37m+                        <li><b>Log Download Link</b>: <A HREF = "https://s3.amazonaws.com/fuse-manoj/logs/log.html">https://s3.amazonaws.com/fuse-manoj/logs/log.txt</A></li>[0m
+    [37m                 </ul>[0m
+    [37m [0m
+    [37m         </body>[0m
+[0m  * execute[a2en] action run
+    [32m- execute sudo a2ensite fuse[0m
+[0m  * template[/var/www/html/fuse/fuse.html] action create
+    [32m- update content in file /var/www/html/fuse/fuse.html from f55bb7 to 63eb56[0m
+    [37m--- /var/www/html/fuse/fuse.html	2017-08-26 18:47:05.362111000 +0000[0m
+    [37m+++ /var/www/html/fuse/.chef-fuse20170826-29197-zfospd.html	2017-08-26 23:34:35.682111000 +0000[0m
+    [37m@@ -10,7 +10,7 @@[0m
+    [37m                         <li><b>Platform</b>: ubuntu</li>[0m
+    [37m                         <li><b>Plaform Version</b>: 14.04</li>[0m
+    [37m                         <li><b>Run List</b>: recipe[apache]</li>[0m
+    [37m-                        <li><b>Log Download Link</b>: <A HREF = "https://s3.amazonaws.com/fuse-manoj/logs/log.txt/">https://s3.amazonaws.com/fuse-manoj/logs/log.txt</A></li>[0m
+    [37m+                        <li><b>Log Download Link</b>: <A HREF = "https://s3.amazonaws.com/fuse-manoj/logs/log.html">https://s3.amazonaws.com/fuse-manoj/logs/log.txt</A></li>[0m
+    [37m                 </ul>[0m
+    [37m [0m
+    [37m         </body>[0m
+[0m  * service[apache2] action restart
+    [32m- restart service service[apache2][0m
+[0m[0m
+Running handlers:[0m
+Running handlers complete
+[0mChef Client finished, 4/10 resources updated in 05 seconds[0m
+[2017-08-26T23:34:39+00:00] WARN: *****************************************
+[2017-08-26T23:34:39+00:00] WARN: Did not find config file: /solo.rb, using command line options.
+[2017-08-26T23:34:39+00:00] WARN: *****************************************
+[2017-08-26T23:34:39+00:00] FATAL: Cannot load configuration from fuse.json
+Starting Chef Client, version 13.3.42[0m
+resolving cookbooks for run list: ["apache"][0m
+Synchronizing Cookbooks:[0m
+  - apache (0.1.0)[0m
+Installing Cookbook Gems:[0m
+Compiling Cookbooks...[0m
+Converging 8 resources[0m
+Recipe: apache::default[0m
+  * apt_package[apache2] action install (up to date)
+  * service[apache2] action start (up to date)
+  * service[apache2] action enable (up to date)
+  * directory[/var/www/html/fuse] action create (up to date)
+  * cookbook_file[/etc/apache2/sites-available/000-default.conf] action create (up to date)
+  * cookbook_file[/etc/apache2/sites-available/fuse.conf] action create (up to date)
+  * template[/var/www/html/fuse.html] action create
+    [32m- update content in file /var/www/html/fuse.html from 63eb56 to 5aa435[0m
+    [37m--- /var/www/html/fuse.html	2017-08-26 23:34:35.610111000 +0000[0m
+    [37m+++ /var/www/html/.chef-fuse20170826-30076-ucpsc5.html	2017-08-26 23:38:15.234111000 +0000[0m
+    [37m@@ -10,7 +10,7 @@[0m
+    [37m                         <li><b>Platform</b>: ubuntu</li>[0m
+    [37m                         <li><b>Plaform Version</b>: 14.04</li>[0m
+    [37m                         <li><b>Run List</b>: recipe[apache]</li>[0m
+    [37m-                        <li><b>Log Download Link</b>: <A HREF = "https://s3.amazonaws.com/fuse-manoj/logs/log.html">https://s3.amazonaws.com/fuse-manoj/logs/log.txt</A></li>[0m
+    [37m+                        <li><b>Log Download Link</b>: <A HREF = "https://s3.amazonaws.com/fuse-manoj/logs/log.html">https://s3.amazonaws.com/fuse-manoj/logs/log.html</A></li>[0m
+    [37m                 </ul>[0m
+    [37m [0m
+    [37m         </body>[0m
+[0m  * execute[a2en] action run
+    [32m- execute sudo a2ensite fuse[0m
+[0m  * template[/var/www/html/fuse/fuse.html] action create
+    [32m- update content in file /var/www/html/fuse/fuse.html from 63eb56 to 5aa435[0m
+    [37m--- /var/www/html/fuse/fuse.html	2017-08-26 23:34:35.682111000 +0000[0m
+    [37m+++ /var/www/html/fuse/.chef-fuse20170826-30076-1cblzzf.html	2017-08-26 23:38:15.298111000 +0000[0m
+    [37m@@ -10,7 +10,7 @@[0m
+    [37m                         <li><b>Platform</b>: ubuntu</li>[0m
+    [37m                         <li><b>Plaform Version</b>: 14.04</li>[0m
+    [37m                         <li><b>Run List</b>: recipe[apache]</li>[0m
+    [37m-                        <li><b>Log Download Link</b>: <A HREF = "https://s3.amazonaws.com/fuse-manoj/logs/log.html">https://s3.amazonaws.com/fuse-manoj/logs/log.txt</A></li>[0m
+    [37m+                        <li><b>Log Download Link</b>: <A HREF = "https://s3.amazonaws.com/fuse-manoj/logs/log.html">https://s3.amazonaws.com/fuse-manoj/logs/log.html</A></li>[0m
+    [37m                 </ul>[0m
+    [37m [0m
+    [37m         </body>[0m
+[0m  * service[apache2] action restart
+    [32m- restart service service[apache2][0m
+[0m[0m
+Running handlers:[0m
+Running handlers complete
+[0mChef Client finished, 4/10 resources updated in 04 seconds[0m
+[2017-08-26T23:38:18+00:00] WARN: *****************************************
+[2017-08-26T23:38:18+00:00] WARN: Did not find config file: /solo.rb, using command line options.
+[2017-08-26T23:38:18+00:00] WARN: *****************************************
+[2017-08-26T23:38:18+00:00] FATAL: Cannot load configuration from fuse.json
