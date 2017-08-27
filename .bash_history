@@ -350,3 +350,192 @@ sudo docker ps
 sudo groupadd docker
 sudo usermod -aG docker $USER
 exit
+clear
+ls
+cd docker/
+ls
+vi Dockerfile 
+docker build -t fuss/nginx:v1 .
+vi Dockerfile 
+docker build -t fuss/nginx:v1 .
+clear
+vi Dockerfile 
+docker build -t fuss/nginx:v1 .
+docker run -it -p 8080:80 fuss/nginx:v1 
+vi Dockerfile 
+docker build -t fuss/nginx:v1 .
+docker run -it -p 8080:80 fuss/nginx:v1 
+docker run -itd -p 8080:8080 fuss/nginx:v2 
+docker ps
+curl http://localhost:8080
+clear
+ls
+clear
+ls
+cd ..
+ls
+clear
+cd chef-solo/
+ls
+cat chef-stacktrace.out 
+less chef-stacktrace.out 
+clear
+ls
+cd cookbooks/
+ls
+cd apache/
+ls
+clear
+cd ..
+ls
+cd ..
+clear
+ls
+apt-get install git -y 
+sudo apt-get install git -y 
+git --version
+clear
+ls
+clear
+ls
+clear
+ls
+git init
+ls -all
+clear
+git add .
+sudo git add .
+clear
+sudo git commit -m "Docker and chef files"
+git config --global user.name "Manoj Chowdary Vattikuti"
+git config --global user.email "manoj.awsdeveloper@gmail.com"
+git remote add origin https://github.com/ManojVattikuti/Fuse.git
+clear
+git remote -v
+git push -u origin master 
+git push origin master 
+ls
+rm chefdk_2.1.11-1_amd64.deb 
+ls
+git add .
+sudo git add .
+clear
+git commit -m "Removed chefdk debian package "
+sudo git commit -m "Removed chefdk debian package "
+clear
+git push origin master
+git pull origin master
+sudo git pull origin master
+ls -all
+clear
+aws s3 ls
+aws s3 cp chef-repo/log.html s3://fuse-manoj/logs/log.html
+clear
+ls
+clear
+ls -all
+docker ps
+clear
+docker ps
+clear
+docker images
+clear
+docker fuss
+clear
+docker ps
+docker stop a02c
+clear
+docker system prune
+clear
+docker ps
+clear
+docker ps -a
+clear
+docker run -itd -p 8080:8080 -v /var/www/html/fuss/fuss.html:/usr/share/nginx/html --name=nginx8080 fuss/nginx:v2
+docker ps
+docker exec -it ba73 /bin/bash
+docker run -itd -p 8080:8080 -v /var/www/html/fuse/fuse.html:/usr/share/nginx/html --name=nginx8080 fuss/nginx:v2
+docker run -itd -p 8080:8080 -v /var/www/html/fuse:/usr/share/nginx/html --name=nginx8080 fuss/nginx:v2
+docker system prune
+clear
+docker run -itd -p 8080:8080 -v /var/www/html/fuse:/usr/share/nginx/html --name=nginx8080 fuss/nginx:v2
+docker ps
+docker exec -it 8e1f
+docker exec -it 8e1f /bin/bash
+docker ps
+docker stop 8e1f 
+clear
+docker images
+clear
+docker ps
+clear
+docker ps
+clear
+curl http://localhost:8080
+curl http://localhost:8080/fuse.html
+clear
+ls
+clear
+ls
+docker ps
+docker stop cf83 
+docker system prune
+clear
+docker ps
+docker images
+clear
+docker run -itd -p 8080:8080 --name=nginx8080 fuse/nginx:v1
+docker ps
+docker exec -it  990f /bin/bash
+clear
+curl http://169.254.169.254/latest/meta-data/public-keys/0/openssh-key
+clear
+sudo usermod -a -G sudo goran
+clear
+sudo adduser --home /home/goran --shell /bin/bash --ingroup admin *goran*
+sudo adduser --home /home/goran --shell /bin/bash --ingroup admin goran
+vi /etc/skel/.
+cd  /etc/skel
+ls
+ls -all
+vi .profile 
+clear
+sudo su - goran
+clear
+clear
+sudo adduser goran --disabled-password
+sudi vi /etc/passwd
+sudo vi /etc/passwd
+sudo adduser goran --disabled-password
+compgen -g
+sudo groupdel goran
+compgen -g
+sudo vi /etc/passwd
+sudo adduser goran --disabled-password
+clear
+sudo su - goran
+clear
+sudo su - goran
+compgen -g
+sudo groupdel goran
+vi /etc/passwd
+sudo vi /etc/passwd
+sudo groupdel goran
+clear
+sudo adduser goran --disabled-password sudo 
+sudo adduser goran sudo --disabled-password
+clear
+clear
+cat /etc/ssh/sshd_config 
+clear
+ls
+clear
+curl http://169.254.169.254/latest/meta-data/public-keys/0/openssh-key
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDEMhf9YKa8AhtclYp93tTIGA4DtzYsMyVjkKNr/E7BtmBomdadmLGe47sBfR2WkUQNXqnVOMNeJfWnusKHY3+rF6ALXkxzNET7Mab/k/Khp5gpA5/R6WCEdnsEE3DgM+Xu1i0K20QDAzuTEYV53yRCi5Vap07svY8PWJbxMHM2vpKpK0CeyH0GbpB69PFvp84eN6TCsTsSAqcX2hZXxnVLDIhuCFc32Nfg0NyXFlCMMWweZzG4K+J6Su0PMU4EwlqoaVIbNNBy9KhqoVlBy2AtbHYXCqYpWCyW/8SL6krBoWk4N1pByfjk21yEBtJsqgNNGTGUCfa0iVF07RI5fctV fuse
+clear
+sudo adduser fuse
+sudo adduser fuse --disabled-password
+cat /etc/passwd
+clear
+vi /etc/passwd
+sudo adduser goran

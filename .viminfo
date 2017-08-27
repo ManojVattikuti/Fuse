@@ -13,6 +13,7 @@ $
 # Command Line History (newest to oldest):
 :wq!
 :q!
+:q!1
 :w
 
 # Search String History (newest to oldest):
@@ -24,37 +25,49 @@ $
 # Input Line History (newest to oldest):
 
 # Registers:
-""0	LINE	0
+"0	LINE	0
 	                       
-"1	LINE	0
-	                       
+""1	LINE	0
+	#ENTRYPOINT ["/usr/sbin/nginx", "-D", "FOREGROUND"]
 "2	LINE	0
-	                      <li><b>Log Download Location-https://s3.amazonaws.com/fuse-manoj/logs/log.txt</li>
+	goran:x:1001:1001:,,,:/home/goran:/bin/bash
 "3	LINE	0
-	                </u2>
+	goran:x:1001:1001::/home/goran:/bin/bash
 "4	LINE	0
-	                <u2>
+	                       
 "5	LINE	0
-	  group 'apache'
+	                      <li><b>Log Download Location-https://s3.amazonaws.com/fuse-manoj/logs/log.txt</li>
 "6	LINE	0
+	                </u2>
+"7	LINE	0
+	                <u2>
+"8	LINE	0
+	  group 'apache'
+"9	LINE	0
 	  owner 'apache'
 
 # File marks:
-'0  1  0  ~/chef-repo/solo.rb
-'1  9  37  ~/docker/Dockerfile
-'2  1  0  ~/docker/nginx.conf
-'3  1  0  ~/docker/Dockerfile
-'4  13  164  ~/chef-repo/cookbooks/apache/templates/default/fuse.html.erb
-'5  1  0  chef-repo/cookbooks/apache/templates/default/fuse.html.erb
-'6  19  0  ~/chef-repo/cookbooks/apache/templates/default/fuse.html.erb
-'7  1  0  ~/chef-repo/cookbooks/apache/templates
-'8  7  14  ~/docker/Dockerfile
-'9  6  33  ~/docker/Dockerfile
+'0  10  0  ~/docker/Dockerfile
+'1  22  0  /etc/skel/.profile
+'2  1  0  /etc/skel
+'3  25  0  /etc/passwd
+'4  1  0  /etc/passwd
+'5  1  0  ~/chef-repo/solo.rb
+'6  9  37  ~/docker/Dockerfile
+'7  1  0  ~/docker/nginx.conf
+'8  1  0  ~/docker/Dockerfile
+'9  13  164  ~/chef-repo/cookbooks/apache/templates/default/fuse.html.erb
 
 # Jumplist (newest first):
+-'  10  0  ~/docker/Dockerfile
+-'  1  0  ~/docker/Dockerfile
+-'  22  0  /etc/skel/.profile
+-'  1  0  /etc/skel/.profile
+-'  1  0  /etc/skel
+-'  25  0  /etc/passwd
+-'  1  0  /etc/passwd
 -'  1  0  ~/chef-repo/solo.rb
 -'  9  37  ~/docker/Dockerfile
--'  1  0  ~/docker/Dockerfile
 -'  1  0  ~/docker/nginx.conf
 -'  13  164  ~/chef-repo/cookbooks/apache/templates/default/fuse.html.erb
 -'  1  0  ~/chef-repo/cookbooks/apache/templates/default/fuse.html.erb
@@ -64,7 +77,7 @@ $
 -'  7  14  ~/docker/Dockerfile
 -'  6  33  ~/docker/Dockerfile
 -'  8  0  ~/docker/Dockerfile
--'  13  0  ~/docker/Dockerfile
+-'  12  0  ~/docker/Dockerfile
 -'  30  164  ~/chef-repo/cookbooks/apache/templates/default/fuse.html.erb
 -'  1  0  ~/chef-repo/cookbooks/apache/templates/default
 -'  33  18  ~/chef-repo/cookbooks/apache/templates/default/fuse.html.erb
@@ -130,22 +143,23 @@ $
 -'  2  30  ~/chef-repo/fuse.json
 -'  1  0  ~/chef-repo/fuse.json
 -'  2  30  ~/chef-repo/fuse.json
+-'  1  0  ~/chef-repo/solo.rb
+-'  1  0  ~/docker/nginx.conf
+-'  13  164  ~/chef-repo/cookbooks/apache/templates/default/fuse.html.erb
+-'  1  0  ~/chef-repo/cookbooks/apache/templates/default/fuse.html.erb
+-'  1  0  chef-repo/cookbooks/apache/templates/default/fuse.html.erb
+-'  19  0  ~/chef-repo/cookbooks/apache/templates/default/fuse.html.erb
+-'  1  0  ~/chef-repo/cookbooks/apache/templates
+-'  30  164  ~/chef-repo/cookbooks/apache/templates/default/fuse.html.erb
 
 # History of marks within files (newest to oldest):
 
-> ~/chef-repo/solo.rb
-	"	1	0
-	^	1	29
-	.	1	28
-	+	2	26
-	+	1	28
-
 > ~/docker/Dockerfile
-	"	9	37
+	"	10	0
 	^	9	38
-	.	9	37
-	+	12	10
-	+	12	0
+	.	10	0
+	+	11	10
+	+	11	0
 	+	5	19
 	+	6	33
 	+	6	6
@@ -153,8 +167,24 @@ $
 	+	5	20
 	+	7	14
 	+	9	50
-	+	11	0
+	+	10	0
 	+	9	37
+	+	10	0
+
+> /etc/skel/.profile
+	"	22	0
+
+> /etc/passwd
+	"	25	0
+	.	26	0
+	+	26	0
+
+> ~/chef-repo/solo.rb
+	"	1	0
+	^	1	29
+	.	1	28
+	+	2	26
+	+	1	28
 
 > ~/docker/nginx.conf
 	"	1	0
