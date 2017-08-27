@@ -412,3 +412,31 @@ Running handlers complete
 [2017-08-26T23:38:18+00:00] WARN: Did not find config file: /solo.rb, using command line options.
 [2017-08-26T23:38:18+00:00] WARN: *****************************************
 [2017-08-26T23:38:18+00:00] FATAL: Cannot load configuration from fuse.json
+Starting Chef Client, version 13.3.42[0m
+resolving cookbooks for run list: ["apache"][0m
+Synchronizing Cookbooks:[0m
+  - apache (0.1.0)[0m
+Installing Cookbook Gems:[0m
+Compiling Cookbooks...[0m
+Converging 8 resources[0m
+Recipe: apache::default[0m
+  * apt_package[apache2] action install (up to date)
+  * service[apache2] action start (up to date)
+  * service[apache2] action enable (up to date)
+  * template[/var/www/html/fuse.html] action create (up to date)
+  * cookbook_file[/etc/apache2/sites-available/000-default.conf] action create (up to date)
+  * directory[/var/www/html/fuse] action create (up to date)
+  * cookbook_file[/etc/apache2/sites-available/fuse.conf] action create (up to date)
+  * template[/var/www/html/fuse/fuse.html] action create (up to date)
+  * execute[a2en] action run
+    [32m- execute sudo a2ensite fuse[0m
+[0m  * service[apache2] action restart
+    [32m- restart service service[apache2][0m
+[0m[0m
+Running handlers:[0m
+Running handlers complete
+[0mChef Client finished, 2/10 resources updated in 04 seconds[0m
+[2017-08-27T19:12:42+00:00] WARN: *****************************************
+[2017-08-27T19:12:42+00:00] WARN: Did not find config file: /solo.rb, using command line options.
+[2017-08-27T19:12:42+00:00] WARN: *****************************************
+[2017-08-27T19:12:42+00:00] FATAL: Cannot load configuration from fuse.json

@@ -15,11 +15,12 @@ service "apache2" do
     action [:start, :enable]
 end
 
-#Create a directory structure for our website 
-directory '/var/www/html/fuse' do
-  mode '0755'
-  action :create
+#Write fuse.html homepage 
+template "/var/www/html/fuse.html" do
+	source "fuse.html.erb"
+	mode "0755"
 end
+
 #Copy the default configuration file to  load fuse.html
 cookbook_file '/etc/apache2/sites-available/000-default.conf' do
    source 'default'
@@ -27,26 +28,28 @@ cookbook_file '/etc/apache2/sites-available/000-default.conf' do
    notifies :restart, "service[apache2]"
 end
 
-#Copy the apache configuration file for fuse website 
+#Create a directory structure for our virtual host configuration website 
+directory '/var/www/html/fuse' do
+  mode '0755'
+  action :create
+end
+
+#Copy the apache configuration file for virtual host fuse website 
 cookbook_file '/etc/apache2/sites-available/fuse.conf' do
   source 'fuse'
   mode '0755'
   action :create
 end
 
-#Write fuse.html homepage 
-template "/var/www/html/fuse.html" do
-	source "fuse.html.erb"
-	mode "0755"
-end
-#Execute command to enable fuse virtual host site on to our server  
-execute 'a2en' do
-  command 'sudo a2ensite fuse'
-notifies :restart, "service[apache2]"
-end
 
 #Write fuse.html homepage for fuse virtual host 
 template "/var/www/html/fuse/fuse.html" do 
      source "fuse.html.erb"
 	 mode "0644"
 end 
+
+#Execute command to enable fuse virtual host site on to our server  
+execute 'a2en' do
+  command 'sudo a2ensite fuse'
+notifies :restart, "service[apache2]"
+end
