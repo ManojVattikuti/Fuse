@@ -440,3 +440,79 @@ Running handlers complete
 [2017-08-27T19:12:42+00:00] WARN: Did not find config file: /solo.rb, using command line options.
 [2017-08-27T19:12:42+00:00] WARN: *****************************************
 [2017-08-27T19:12:42+00:00] FATAL: Cannot load configuration from fuse.json
+Starting Chef Client, version 13.3.42[0m
+resolving cookbooks for run list: ["apache"][0m
+Synchronizing Cookbooks:[0m
+  - apache (0.1.0)[0m
+Installing Cookbook Gems:[0m
+Compiling Cookbooks...[0m
+Converging 8 resources[0m
+Recipe: apache::default[0m
+  * yum_package[apache2] action install[2017-08-29T17:28:04+00:00] WARN: Yum executable not found or doesn't start with #!. Using default python.
+
+    [0m
+    ================================================================================[0m
+    [31mError executing action `install` on resource 'yum_package[apache2]'[0m
+    ================================================================================[0m
+    
+[0m    Mixlib::ShellOut::ShellCommandFailed[0m
+    ------------------------------------[0m
+    Expected process to exit with [0], but received '1'
+[0m    ---- Begin output of /usr/bin/python /opt/chef/embedded/lib/ruby/gems/2.4.0/gems/chef-13.3.42/lib/chef/provider/package/yum/yum-dump.py --options --installed-provides --yum-lock-timeout 30 ----
+[0m    STDOUT: 
+[0m    STDERR: Traceback (most recent call last):
+[0m      File "/opt/chef/embedded/lib/ruby/gems/2.4.0/gems/chef-13.3.42/lib/chef/provider/package/yum/yum-dump.py", line 36, in <module>
+[0m        import yum
+[0m    ImportError: No module named yum
+[0m    ---- End output of /usr/bin/python /opt/chef/embedded/lib/ruby/gems/2.4.0/gems/chef-13.3.42/lib/chef/provider/package/yum/yum-dump.py --options --installed-provides --yum-lock-timeout 30 ----
+[0m    Ran /usr/bin/python /opt/chef/embedded/lib/ruby/gems/2.4.0/gems/chef-13.3.42/lib/chef/provider/package/yum/yum-dump.py --options --installed-provides --yum-lock-timeout 30 returned 1[0m
+    
+[0m    Resource Declaration:[0m
+    ---------------------[0m
+    # In /home/ubuntu/chef-solo/cookbooks/apache/recipes/default.rb
+[0m    
+[0m      8: yum_package "apache2" do
+[0m      9:    action :install
+[0m     10: end   
+[0m     11: 
+[0m    
+[0m    Compiled Resource:[0m
+    ------------------[0m
+    # Declared in /home/ubuntu/chef-solo/cookbooks/apache/recipes/default.rb:8:in `from_file'
+[0m    
+[0m    yum_package("apache2") do
+[0m      package_name "apache2"
+[0m      action [:install]
+[0m      default_guard_interpreter :default
+[0m      declared_type :yum_package
+[0m      cookbook_name "apache"
+[0m      recipe_name "default"
+[0m    end
+[0m    
+[0m    System Info:[0m
+    ------------[0m
+    chef_version=13.3.42
+[0m    platform=ubuntu
+[0m    platform_version=14.04
+[0m    ruby=ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+[0m    program_name=chef-solo worker: ppid=5866;start=17:28:03;
+[0m    executable=/opt/chef/bin/chef-solo[0m
+    
+[0m[0m
+Running handlers:[0m
+[2017-08-29T17:28:04+00:00] ERROR: Running exception handlers
+Running handlers complete
+[0m[2017-08-29T17:28:04+00:00] ERROR: Exception handlers complete
+Chef Client failed. 0 resources updated in 01 seconds[0m
+[2017-08-29T17:28:04+00:00] FATAL: Stacktrace dumped to /home/ubuntu/chef-solo/chef-stacktrace.out
+[2017-08-29T17:28:04+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2017-08-29T17:28:04+00:00] ERROR: yum_package[apache2] (apache::default line 8) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0], but received '1'
+---- Begin output of /usr/bin/python /opt/chef/embedded/lib/ruby/gems/2.4.0/gems/chef-13.3.42/lib/chef/provider/package/yum/yum-dump.py --options --installed-provides --yum-lock-timeout 30 ----
+STDOUT: 
+STDERR: Traceback (most recent call last):
+  File "/opt/chef/embedded/lib/ruby/gems/2.4.0/gems/chef-13.3.42/lib/chef/provider/package/yum/yum-dump.py", line 36, in <module>
+    import yum
+ImportError: No module named yum
+---- End output of /usr/bin/python /opt/chef/embedded/lib/ruby/gems/2.4.0/gems/chef-13.3.42/lib/chef/provider/package/yum/yum-dump.py --options --installed-provides --yum-lock-timeout 30 ----
+Ran /usr/bin/python /opt/chef/embedded/lib/ruby/gems/2.4.0/gems/chef-13.3.42/lib/chef/provider/package/yum/yum-dump.py --options --installed-provides --yum-lock-timeout 30 returned 1
+[2017-08-29T17:28:04+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)

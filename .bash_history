@@ -539,3 +539,66 @@ cat /etc/passwd
 clear
 vi /etc/passwd
 sudo adduser goran
+clear
+docker ps
+docker ps -a
+docker start d0a8 
+docker start 990f
+clear
+docker ps
+clear
+docker ps
+clear
+sudo su - goran
+clear
+ls
+cd docker/
+ls
+vi Dockerfile 
+clear
+ls
+ls -all
+clear
+cd ..
+ls
+cd ~
+ls
+git add .
+git commit -m "removed entry point in Docker"
+sudo git commit -m "removed entry point in Docker"
+clear
+git push -u origin master
+sudo git push -u origin master
+clear
+ls
+sudo su - goran
+clear
+cd chef-repo/
+ls
+cd cookbooks/
+ls
+cd apache/
+ls
+cd recipes/
+ls
+vi default.rb 
+clear
+cd ..
+sudo chef-solo -c solo.rb -j fuse.json >> log.html
+ls
+sudo chef-solo -c solo.rb -j fuse.json 
+clear
+ls
+clear
+cd ..
+curl http://localhost:80
+ls
+sudo git add .
+sudo git commit -m "Rearranged the cookbook resource execution as per the task"
+sudo git push -u origin master
+clear
+ls
+sudo su 
+sudo su - goran
+history
+exit

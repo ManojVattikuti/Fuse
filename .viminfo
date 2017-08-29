@@ -11,8 +11,8 @@
 $
 
 # Command Line History (newest to oldest):
-:wq!
 :q!
+:wq!
 :q!1
 :w
 
@@ -47,18 +47,19 @@ $
 	template "/var/www/html/fuse/fuse.html" do 
 
 # File marks:
-'0  1  0  ~/chef-repo/cookbooks/apache/recipes/default.rb
-'1  10  0  ~/docker/Dockerfile
-'2  22  0  /etc/skel/.profile
-'3  1  0  /etc/skel
-'4  25  0  /etc/passwd
-'5  1  0  /etc/passwd
-'6  1  0  ~/chef-repo/solo.rb
-'7  9  37  ~/docker/Dockerfile
-'8  1  0  ~/docker/nginx.conf
-'9  1  0  ~/docker/Dockerfile
+'0  36  0  ~/chef-repo/cookbooks/apache/recipes/default.rb
+'1  1  0  ~/chef-repo/cookbooks/apache/recipes/default.rb
+'2  10  0  ~/docker/Dockerfile
+'3  22  0  /etc/skel/.profile
+'4  1  0  /etc/skel
+'5  25  0  /etc/passwd
+'6  1  0  /etc/passwd
+'7  1  0  ~/chef-repo/solo.rb
+'8  9  37  ~/docker/Dockerfile
+'9  1  0  ~/docker/nginx.conf
 
 # Jumplist (newest first):
+-'  36  0  ~/chef-repo/cookbooks/apache/recipes/default.rb
 -'  1  0  ~/chef-repo/cookbooks/apache/recipes/default.rb
 -'  10  0  ~/docker/Dockerfile
 -'  1  0  ~/docker/Dockerfile
@@ -142,11 +143,24 @@ $
 -'  22  0  /etc/skel/.profile
 -'  1  0  /etc/skel/.profile
 -'  1  0  /etc/skel
+-'  10  0  ~/docker/Dockerfile
+-'  1  0  ~/docker/Dockerfile
+-'  22  0  /etc/skel/.profile
+-'  1  0  /etc/skel/.profile
+-'  1  0  /etc/skel
+-'  25  0  /etc/passwd
+-'  1  0  /etc/passwd
+-'  1  0  ~/chef-repo/solo.rb
+-'  9  37  ~/docker/Dockerfile
+-'  1  0  ~/docker/nginx.conf
+-'  13  164  ~/chef-repo/cookbooks/apache/templates/default/fuse.html.erb
+-'  1  0  ~/chef-repo/cookbooks/apache/templates/default/fuse.html.erb
+-'  1  0  chef-repo/cookbooks/apache/templates/default/fuse.html.erb
 
 # History of marks within files (newest to oldest):
 
 > ~/chef-repo/cookbooks/apache/recipes/default.rb
-	"	1	0
+	"	36	0
 	^	1	1
 	.	55	0
 	+	1	3
